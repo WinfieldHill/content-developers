@@ -406,114 +406,112 @@
                     <style>
                         .hide-on-desktop {display: none;}
     
-    .header-banner-slot {
-        display: block !important;
-    }
-    
-    .header-banner a:hover {text-decoration: none !important;}
-    
-    #global-top-banner.swiper-container-tb {
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-        max-width: 500px;
-    }
-    .header-banner .swiper-slide a {
-        line-height: 1.4;
-        display: block;
-        padding: 10px 0;
-        font-size: 12px;
-    }
+					    .header-banner-slot {
+					        display: block !important;
+					    }
+					    
+					    .header-banner a:hover {text-decoration: none !important;}
+					    
+					    #global-top-banner.swiper-container-tb {
+					        overflow: hidden;
+					        position: relative;
+					        width: 100%;
+					        max-width: 500px;
+					    }
+					    .header-banner .swiper-slide a {
+					        line-height: 1.4;
+					        display: block;
+					        padding: 10px 0;
+					        font-size: 12px;
+					    }
 
-    .header-swiper-pagination {
-        height: 20%;
-        line-height: 20%;
-    }
-    .header-swiper-pagination .swiper-pagination-bullet {
-        width: 5px;
-        height: 5px;
-        background: #ccc;
-        opacity: 1;
-    }
-    .header-swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-        background: #fff;
-    }
-    
-    
-    @media only screen and (max-width: 1023px) {
-        
-        #global-top-banner.swiper-container-tb {
-            position: absolute;
-            width: 100%;
-            max-width: 512px;
-            top: 0;
-            right: 250px;
-            font-size: 11px;
-        }
-        
-    }
-    
-    @media only screen and (max-width: 767px) {
-        .hide-on-desktop {display: block;}
-       .hide-on-mobile { display: none; }
-        
-        .header-banner-inner {
-            height: auto;
-        }
-        
-        #global-top-banner.swiper-container-tb {
-            right: 0;
-            left: 0;
-            position: relative;
-            line-height: 1.5;
-            max-width: 100vw;
-            padding-bottom: 10px;
-        }
-        #global-top-banner.swiper-container-tb .swiper-wrapper {
-            height: 80%;
-        }
-        #global-top-banner.swiper-container-tb .swiper-slide {
-            width: 100vw !important;
-        }
-        
-    }
-
-
-</style>
+					    .header-swiper-pagination {
+					        height: 20%;
+					        line-height: 20%;
+					    }
+					    .header-swiper-pagination .swiper-pagination-bullet {
+					        width: 5px;
+					        height: 5px;
+					        background: #ccc;
+					        opacity: 1;
+					    }
+					    .header-swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+					        background: #fff;
+					    }
+					    
+					    
+					    @media only screen and (max-width: 1023px) {
+					        
+					        #global-top-banner.swiper-container-tb {
+					            position: absolute;
+					            width: 100%;
+					            max-width: 512px;
+					            top: 0;
+					            right: 250px;
+					            font-size: 11px;
+					        }
+					        
+					    }
+					    
+					    @media only screen and (max-width: 767px) {
+					        .hide-on-desktop {display: block;}
+					       .hide-on-mobile { display: none; }
+					        
+					        .header-banner-inner {
+					            height: auto;
+					        }
+					        
+					        #global-top-banner.swiper-container-tb {
+					            right: 0;
+					            left: 0;
+					            position: relative;
+					            line-height: 1.5;
+					            max-width: 100vw;
+					            padding-bottom: 10px;
+					        }
+					        #global-top-banner.swiper-container-tb .swiper-wrapper {
+					            height: 80%;
+					        }
+					        #global-top-banner.swiper-container-tb .swiper-slide {
+					            width: 100vw !important;
+					        }
+					        
+					    }
+					</style>
                     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
                     <script src="//cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script>
                     <script>
                         try {
 
-        var tbSwiper = new Swiper('.swiper-container-tb',{
-            loop: true,
-            slidesPerView: 1,
-            spaceBetween: 0 ,
-            autoplay: {
-                delay: 3500,
-                disableOnInteraction: false
-            },
-            pagination: {
-                el: '.header-swiper-pagination',
-                type: 'bullets'
-            }
-        });
-        
-    } catch (error) {
-        console.error("Top Banner error: "+error); 
-    }
-    
-    
-    var tb = document.getElementById("global-top-banner");
-    
-    tb.addEventListener("mouseenter", function( event ) {   
-        tbSwiper.autoplay.stop();
-    }, false);
-    tb.addEventListener("mouseleave", function( event ) {   
-        tbSwiper.autoplay.start();
-    }, false);  
-    
-</script>
+				        var tbSwiper = new Swiper('.swiper-container-tb',{
+				            loop: true,
+				            slidesPerView: 1,
+				            spaceBetween: 0 ,
+				            autoplay: {
+				                delay: 3500,
+				                disableOnInteraction: false
+				            },
+				            pagination: {
+				                el: '.header-swiper-pagination',
+				                type: 'bullets'
+				            }
+				        });
+				        
+				    } catch (error) {
+				        console.error("Top Banner error: "+error); 
+				    }
+				    
+				    
+				    var tb = document.getElementById("global-top-banner");
+				    
+				    tb.addEventListener("mouseenter", function( event ) {   
+				        tbSwiper.autoplay.stop();
+				    }, false);
+				    tb.addEventListener("mouseleave", function( event ) {   
+				        tbSwiper.autoplay.start();
+				    }, false);  
+				    
+				</script>
                 </div>
                 <!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/contentasset.isml (app_storefront_core)" dwTemplateURL="http://localhost:60606/target=/app_storefront_core/cartridge/templates/default/content/content/contentasset.isml" -->
                 <!-- dwMarker="linclude" dwTemplateTitle="/default/content/content/htmlcontentasset.isml (org_lillypulitzer)" dwTemplateURL="http://localhost:60606/target=/org_lillypulitzer/cartridge/templates/default/content/content/htmlcontentasset.isml" -->
@@ -570,9 +568,9 @@
                         <li class="category">
                             <style>
                                 #top-item-1 {
-background: url(/on/demandware.static/-/Sites-lillypulitzer-site-catalog/default/dwc0545c2b/navigation/flourish.png) 0 0 no-repeat;
-}
-</style>
+									background: url(/on/demandware.static/-/Sites-lillypulitzer-site-catalog/default/dwc0545c2b/navigation/flourish.png) 0 0 no-repeat;
+								}
+							</style>
                             <div><a class="has-sub-menu " aria-expanded="false" id="top-item-1" href="http://stg.lillypulitzer.com/new/">
                                     New
                                     <!-- dwMarker="linclude" dwTemplateTitle="/default/util/svghelper.isml (org_lillypulitzer)" dwTemplateURL="http://localhost:60606/target=/org_lillypulitzer/cartridge/templates/default/util/svghelper.isml" -->
@@ -1905,152 +1903,16 @@ background: url(/on/demandware.static/-/Sites-lillypulitzer-site-catalog/default
                 <!-- start custom dev -->
                 <link rel="stylesheet" type="text/css" href="http://localhost:8000/4.1.19.css">
                 <div id="hp-promo" class="homepage-module">
-                    <picture>
-                        <source srcset="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dwbab4086a/homepage/2019/march/4.1_swell_hp_d_background.jpg" media="(min-width: 768px)">
-                        <img src="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dwd9c71def/homepage/2019/march/4.1_swell_hp_M_background.jpg" alt="Lilly Pulitzer x Swell Bottles" />
-                    </picture>
-                    <div class="text-wrap">
-                        <p class="first">ONE DAY ONLY</p>
-                        <p class="second">BUY ONE S'WELL,<br>GET ONE S'WELL FREE*</p>
-                        <a class="third" href="http://stg.lillypulitzer.com/gifts-accessories/collections/swell-x-lilly-pulitzer/">SHOP NOW</a>
-                        <p class="fourth">*Free bottle must be of equal value.<br>While supplies last. <a href="/promo-details.html">DETAILS+</a>
-                    </div>
-                    <a href="http://stg.lillypulitzer.com/gifts-accessories/collections/swell-x-lilly-pulitzer/" class="link-overlay"></a>
                 </div>
                 <div id="hp-hero-video" class="homepage-module">
-                    <div class="vid-wrap">
-                        <video class="hide-on-mobile" playsinline id="hpvid" width="100%" height="auto" autoplay muted loop poster="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dwcfab7a38/homepage/2019/march/0328_homepage_hero_d.jpg">
-                            <source src="//s7d9.scene7.com/is/content/sugartown/Campaign%20Video/0328_homepage_hero_d.mp4" type="video/mp4">
-                        </video>
-                        <video class="hide-on-desktop" playsinline id="hpvidm" width="100%" height="auto" autoplay muted loop poster="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dwd6267ace/homepage/2019/march/0328_homepage_hero_m.jpg">
-                            <source src="//s7d9.scene7.com/is/content/sugartown/Campaign%20Video/0328_homepage_hero_m.mp4" type="video/mp4">
-                        </video>
-                        <div id="video-controls">
-                            <button type="button" id="play-pause" class="pause hide-on-mobile"><span style="display:none;">PAUSE</span></button>
-                            <button type="button" id="play-pause-m" class="pause hide-on-desktop"><span style="display:none;">PAUSE</span></button>
-                            <button type="button" id="mute" class="unmute hide-on-mobile"><span style="display:none;">SOUND OFF</span></button>
-                            <button type="button" id="mute-m" class="unmute hide-on-desktop"><span style="display:none;">SOUND OFF</span></button>
-                        </div>
-                    </div>
-                    <p class="hero-copy">CHEERS TO <img class="art-60" src="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dw84a12eae/homepage/2019/march/03.28_homepage_d_hero_60art.png" alt="border artwork" /> <span>YEARS</span></p>
-                    <a href="http://stg.lillypulitzer.com/new/" class="hero-cta">SHOP NEW ARRIVALS <span class="right-tri"><i class="fa fa-play"></i></span></a>
-                    <a href="http://stg.lillypulitzer.com/new/" class="link-overlay"></a>
                 </div>
                 <div id="hp-favorites" class="homepage-module">
-                    <picture>
-                        <source srcset="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dwa30d3c58/homepage/2019/february/0203_homepage_d_dash_ourfavorites.gif" media="(min-width: 768px)">
-                        <img class="lazy-load blue-border" data-src="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dwb26e46e9/homepage/2019/february/0203_homepage_m_dash_ourfavorites.gif" alt="Blue Border" />
-                    </picture>
-                    <p class="our-favorites">OUR FAVORITES</p>
-                    <div class="cta-box-wrap">
-                        <a href="http://stg.lillypulitzer.com/dresses/" class="cta-box">SHOP SPRING DRESSES <span class="right-tri"><i class="fa fa-play"></i></span></a>
-                        <a href="http://stg.lillypulitzer.com/swim/" class="cta-box">SHOP SWIM <span class="right-tri"><i class="fa fa-play"></i></span></a>
-                        <a href="http://stg.lillypulitzer.com/clothing/active-lounge/luxletic-activewear/" class="cta-box">SHOP LUXLETIC <span class="right-tri"><i class="fa fa-play"></i></span></a>
-                    </div>
-                    <div class="fav-img-wrap">
-                        <div class="left-50">
-                            <a href="http://stg.lillypulitzer.com/prints-colors/prints/lion-around/">
-                                <picture>
-                                    <source srcset="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dwe460f032/homepage/2019/march/0328_homepage_d_myfavorites_printcampaign.jpg" media="(min-width: 768px)">
-                                    <img class="lazy-load" data-src="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dw1274f0de/homepage/2019/march/0328_homepage_m_myfavorites_printcampaign.jpg" alt="Lion Around Print" />
-                                </picture>
-                                <p class="favorites-caption">PRINT OBSESSION | LION AROUND</p>
-                                <p class="favorites-cta">EXPLORE THE PRINT</p>
-                            </a>
-                        </div>
-                        <div class="right-50">
-                            <div class="carousel-wrap">
-                                <div class="swiper-container-mh">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <a href="http://stg.lillypulitzer.com/new/collections/trend-seersucker/">
-                                                <picture>
-                                                    <source srcset="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dwbcedd724/homepage/2019/march/0328_homepage_d_myfavorites_dressescampaign.jpg" media="(min-width: 768px)">
-                                                    <img class="lazy-load" data-src="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dwcab11001/homepage/2019/march/0328_homepage_m_myfavorites_dressescampaign.jpg" alt="Seersucker dresses" />
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div> <!-- end swiper wrapper -->
-                                </div> <!-- end swiper container -->
-                            </div>
-                            <p class="favorites-caption">IT'S SEERSUCKER SEASON</p>
-                            <a href="http://stg.lillypulitzer.com/new/collections/trend-seersucker/" class="favorites-cta">SHOP THE TREND</a>
-                        </div>
-                    </div>
                 </div>
                 <div id="hp-whats-new" class="homepage-module">
-                    <picture>
-                        <source srcset="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dwa30d3c58/homepage/2019/february/0203_homepage_d_dash_ourfavorites.gif" media="(min-width: 768px)">
-                        <img class="lazy-load blue-border" data-src="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dw333ffc18/homepage/2019/february/0203_homepage_m_dash_whatsnew.gif" alt="Blue Border" />
-                    </picture>
-                    <p class="whats-new">WHAT'S NEW</p>
-                    <div class="new-featured-wrap">
-                        <a href="http://stg.lillypulitzer.com/dresses/easter-dresses/" class="left-50">
-                            <picture>
-                                <source srcset="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dwccb5c056/homepage/2019/march/0328_homepage_d_whatsnew_campaign1.jpg" media="(min-width: 768px)">
-                                <img class="lazy-load" data-src="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dw38b66e0b/homepage/2019/march/0328_homepage_m_whatsnew_campaign.jpg" alt="White Shift Dress" />
-                            </picture>
-                            <picture>
-                                <source srcset="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dw891899dd/homepage/2019/march/0328_homepage_d_whatsnew_campaign2.jpg" media="(min-width: 768px)">
-                                <img class="lazy-load hide-on-mobile" data-src="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/v1553626869737/homepage/2019/march/0203_homepage_m_dash_blog.gif" alt="Blue Printed Shift Dress" />
-                            </picture>
-                            <p class="hide-on-desktop new-caption">FOR THE LOVE OF AN EASTER DRESS<span>The Melani Shift</span></p>
-                            <p class="hide-on-desktop new-cta">SHOP SPRING DRESSES</p>
-                        </a>
-                        <a href="http://stg.lillypulitzer.com/dresses/easter-dresses/" class="right-50 hide-on-mobile">
-                            <p class="new-caption">FOR THE LOVE OF AN EASTER DRESS<span>The Melani Shift</span></p>
-                            <p class="new-cta">SHOP SPRING DRESSES</p>
-                        </a>
-                    </div>
                 </div>
                 <div id="hp-600" class="homepage-module">
-                    <picture>
-                        <source srcset="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dw64ad6f40/homepage/2019/march/S19_Ongoingpromo_homepage_d.gif" media="(min-width: 768px)">
-                        <img class="lazy-load" data-src="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dw721f2700/homepage/2019/march/S19_Ongoingpromo_homepage_m.gif" alt="cheers to 60 years gifts with purchase" />
-                    </picture>
-                    <p class="first">GIFTS WITH PURCHASE</p>
-                    <p class="second"><strong>Receive a Limited Edition Set of Gifts</strong> with your purchase of $600 or more</p>
-                    <a href="http://stg.lillypulitzer.com/new/" class="third">SHOP NEW ARRIVALS <span class="right-tri"><i class="fa fa-play"></i></span></a>
-                    <p class="fourth">In Stores & Online &nbsp;|&nbsp; <a href="/promo-details.html">Details +</a></p>
-                    <p class="gwp wineglasses">Set of 2<br>Wine Glasses</p>
-                    <p class="gwp winestopper">Elephant Wine Stopper</p>
-                    <p class="gwp winebasket">Wicker<br>Wine <br class="hide-on-desktop" />Basket</p>
-                    <a href="http://stg.lillypulitzer.com/new/" class="link-overlay"></a>
                 </div>
                 <div id="hp-r365-blog" class="homepage-module">
-                    <picture>
-                        <source srcset="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dw52b5f7a5/homepage/2019/february/0203_homepage_d_dash_blog.gif" media="(min-width: 768px)">
-                        <img class="lazy-load blue-border" data-src="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dwce903c9d/homepage/2019/february/0203_homepage_m_dash_blog.gif" alt="Blue Border" />
-                    </picture>
-                    <p class="sunny-guide">A GUIDE TO ALL <br class="hide-on-desktop" />THINGS SUNNY & CHIC</p>
-                    <a href="/resort365"><img class="lazy-load r365-text" data-src="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dw6164d58a/homepage/2019/february/r365blog-text.png" alt="Resort365 Blog" /></a>
-                    <div class="r365-blocks-wrap">
-                        <div class="left-33">
-                            <a href="/resort365/prints/cheers-to-60-years-with-cheek-to-cheek/">
-                                <picture>
-                                    <source srcset="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dwbf445d9c/homepage/2019/march/0328_homepage_d_blog.jpg" media="(min-width: 768px)">
-                                    <img class="lazy-load" data-src="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dw6b02671d/homepage/2019/march/0328_homepage_m_blog.jpg" alt="60 year anniversary dress" />
-                                </picture>
-                                <p class="article-text">Cheers to 60 Years<br><span class="article-cta">Read More</span></p>
-                            </a>
-                        </div>
-                        <div class="middle-33">
-                            <div class="cta-box-wrap">
-                                <a href="/resort365/category/style-tips/" class="cta-box">STYLE TIPS</a>
-                                <a href="/resort365/category/prints/" class="cta-box">ALL ABOUT PRINTS</a>
-                                <a href="/resort365/category/lilly-news/" class="cta-box">LILLY NEWS</a>
-                            </div>
-                        </div>
-                        <div class="right-33">
-                            <a href="/love-lilly.html">
-                                <picture>
-                                    <source srcset="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dw8db78f4f/homepage/2019/february/0203_homepage_d_blog_60annicampaign.jpg" media="(min-width: 768px)">
-                                    <img class="lazy-load" data-src="http://stg.lillypulitzer.com/on/demandware.static/-/Sites-lillypulitzer-us-Library/default/dw92a8e0df/homepage/2019/february/0203_homepage_m_blog_60anni_campaign.gif" alt="Cheers to 60 Years" />
-                                </picture>
-                                <p class="article-text">Celebrating 60 years of Palm Beach, print, and the people who bring it to life...YOU. <br><span class="article-cta">Learn More</span></p>
-                            </a>
-                        </div>
-                    </div>
                 </div>
                 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
                 <script src="//cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script>
