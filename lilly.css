@@ -1,0 +1,215 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.banner-image {
+	margin: 20px auto;
+	width: 80vw;
+	height: 80vh;
+	/*border: 2px solid;*/
+	background-image: url("images/3_28_2019/individual-assets/0328_homepage_hero_d.jpg");
+	background-size: 100% 100%;
+}
+
+.cheers-years {
+	position: absolute;
+	left: 30%;
+	top: 38%;
+	color: pink;
+	font-size: 6em;
+}
+.header-cheers {
+	margin: 20px auto;
+	width: 80%;
+	height: 15vh;
+	font-size: 4em;
+	/*border: 2px solid yellow;*/
+	text-align: center;
+	line-height: 15vh;
+	/*display: inline-block;*/
+}
+
+#cta-banner {
+	margin: 1px auto;
+	width: 10%;
+	height: 6vh;
+	background-image: url("images/3_28_2019/individual-assets/03.28_homepage_d_hero_60art.png");
+	background-size: 100% 100%;
+	display: inline-block;
+}
+
+.cheers-cta {
+	text-align: center;
+	margin: 10px auto;
+
+}
+
+.cheers-cta a {
+	text-decoration: none;
+	color: pink;
+	font-size: 1.5em;
+}
+
+.cta-gifts {
+	margin: 100px auto;
+	width: 90%;
+	height: 30vh;
+	background-image: url("images/3_28_2019/individual-assets/S19_Ongoingpromo_homepage_d.gif");
+	background-size: 100% 100%;
+}
+
+.shopping-nav-container {
+	/*border: 1px solid blue;*/
+	width: 100%;
+	margin: 40px auto;
+}
+
+.shopping-header {
+	width: 70%;
+	margin: 20px auto;
+	height: 10vh;
+	background-size: 100% 100%;
+	/*border: 3px solid red;*/
+	background-image: url("images/3_28_2019/individual-assets/0203_homepage_d_dash_ourfavorites.gif");
+}
+
+.our-favorites-text {
+	margin: 0 auto;
+	/*border: 1px solid;*/
+	text-align: center;
+	color: blue;
+	font-size: 1.5em;
+	position: relative;
+	left: 42%;
+	top: 3vh;
+}
+
+.shopping-links-container {
+	margin: 30px auto;
+	width: 70%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.shopping-1, .shopping-2, .shopping-3 {
+	border: 1px solid;
+	padding: 20px 30px;
+	color: black;
+	text-align: center;
+	width: 25%;
+	background-color: white;
+}
+
+.shopping-hero-container {
+	margin: 55px auto;
+	width: 85%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.left-side, .right-side {
+	/*border: 2px solid;*/
+	width: 40%;
+}
+
+.left-side-image {
+	height: 80vh;
+	background-size: 100% 100%;
+	/*border: 3px solid red;*/
+	background-image: url("images/3_28_2019/individual-assets/0328_homepage_d_myfavorites_printcampaign.jpg");
+}
+
+.right-side-image {
+	height: 80vh;
+	background-size: 100% 100%;
+	/*border: 3px solid red;*/
+	background-image: url("images/3_28_2019/individual-assets/0328_homepage_d_myfavorites_dressescampaign.jpg");
+}
+
+.left-side-cta, .right-side-cta  {
+	margin: 10px auto;
+	text-align: center;
+	font-size: 2em;
+}
+
+.left-side-link, .right-side-link  {
+	margin: 10px auto;
+	text-align: center;
+	font-size: 1.25em;
+}
+
+.left-side-link a, .right-side-link a {
+	text-decoration: none;
+	text-decoration: underline;
+	color: black;
+}
+
+.whats-new {
+	margin: 120px auto;
+	width: 85%;
+	height: 10vh;
+	background-image: url("images/3_28_2019/individual-assets/0203_homepage_d_dash_ourfavorites.gif");
+	background-size: 100% 100%;
+}
+
+.whats-new-text {
+	margin: 120px auto;
+	/*border: 1px solid;*/
+	text-align: center;
+	color: blue;
+	font-size: 1.5em;
+	position: relative;
+	left: 45%;
+	top: 3vh;
+}
+
+.easter-hero {
+	margin: 10px auto;
+	width: 80%;
+	/*border: 2px solid;*/
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.left-side-easter {
+	background-image: url("images/3_28_2019/individual-assets/0328_homepage_d_whatsnew_campaign1.jpg");
+	width: 25%;
+	margin: 10px 15px;
+	height: 60vh;
+	background-size: 100% 100%;
+	display: inline-block;
+}
+.center-side-easter {
+	background-image: url("images/3_28_2019/individual-assets/0328_homepage_d_whatsnew_campaign2.jpg");
+	width: 25%;
+	margin: 10px 15px;
+	height: 60vh;
+	background-size: 100% 100%;
+	display: inline-block;
+}
+.right-side-easter {
+	margin: 10px 15px;
+	text-align: center;
+	font-size: 3em;
+	font-weight: 0.5em;
+	width: 35%;
+	height: 60vh;
+	background-size: 100% 100%;
+	display: inline-block;
+}
+
+.right-side-easter a {
+	text-decoration: underline;
+	color: darkblue;
+	font-size: 0.5em;
+}
